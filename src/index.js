@@ -12,7 +12,6 @@ class Card extends React.Component {
 	ajax.get('http://www.freecodecamp.com/news/hot').
 	       end((error, response) => {
 		   if (!error && response) {
-		       console.log(response.body);
 		       this.setState({news: response.body});
 		   }
 		   else {
